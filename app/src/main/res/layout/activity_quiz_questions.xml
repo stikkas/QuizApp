@@ -29,4 +29,111 @@
         app:layout_constraintTop_toBottomOf="@id/tvQuestion"
         tools:src="@drawable/ic_flag_of_argentina" />
 
+    <LinearLayout
+        android:id="@+id/llProgressDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ivFlag">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="10"
+            android:minHeight="50dp"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColorHint="@color/label"
+            android:textSize="14sp"
+            tools:text="0/10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOptionOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/label"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/llProgressDetails"
+        tools:text="Apple" />
+
+    <TextView
+        android:id="@+id/tvOptionTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/label"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvOptionOne"
+        tools:text="Google" />
+
+    <TextView
+        android:id="@+id/tvOptionThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/label"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvOptionTwo"
+        tools:text="Android Inc." />
+
+    <TextView
+        android:id="@+id/tvOption4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/label"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvOptionThree"
+        tools:text="Nokia" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/purple_200"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvOption4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
