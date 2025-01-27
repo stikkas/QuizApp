@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tf_dp">25dp</dimen>
+    <dimen name="tf_sp">25sp</dimen>
+    <dimen name="sxt_dp">16dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+</resources>
