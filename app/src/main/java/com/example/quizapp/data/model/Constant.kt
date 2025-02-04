@@ -72,5 +72,9 @@ fun getQuestion(idx: Int): Question {
 }
 
 fun isLastQuestion(idx: Int): Boolean {
-    return idx == questions.size - 1
+    return idx >= questions.size - 1
 }
+
+fun correctPosition(idx: Int) = idx in questions.indices
+
+fun totalQuestions() = questions.size
