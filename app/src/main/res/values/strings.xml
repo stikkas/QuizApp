@@ -5,4 +5,5 @@
     <string name="name_hint">Name</string>
     <string name="start">START</string>
     <string name="progress_Text">%d/%d</string>
+    <string name="score">Your score is %d out of %d</string>
 </resources>

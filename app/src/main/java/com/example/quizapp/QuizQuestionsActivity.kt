@@ -25,7 +25,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     private var currentPosition: Int = 0
     private var selectedOption: Int = 0
-    private var userName = ""
+    private lateinit var userName: String
     private var correctAnswers = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +39,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             tvOption4.setOnClickListener(this@QuizQuestionsActivity)
             btnSubmit.setOnClickListener(this@QuizQuestionsActivity)
         }
+        userName = intent.getStringExtra(USER_NAME)!!
     }
 
     private fun setQuestion() {
